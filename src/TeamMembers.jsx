@@ -113,7 +113,7 @@ const TeamMembers = (props) => {
   const currentTeamMembers = teamMembersData[teamName] || teamMembersData.engineering;
 
   const handleBackClick = () => {
-    navigate('/leaders');
+    navigate('/');
   };
 
   return (
