@@ -42,30 +42,30 @@ const ProjectShowcase = () => {
     hoverTimeoutRef.current = setTimeout(() => {
       setHoveredProject(null);
     }, 200);
-  };
+  }; 
 
   // Sample project data - replace with your actual projects
   const projects = [
-    {
+    { 
       id: 1,
-      title: "E-Commerce Platform",
-      subtitle: "Full Stack Web Application",
+      title: "Vertical Flight Society",
+      subtitle: "PEMFC Powered eVTOL",
       category: "Full Stack",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
-      description: "A modern e-commerce platform built with React and Node.js featuring real-time inventory management, secure payment processing, and responsive design. The platform includes advanced search functionality, user authentication, shopping cart management, and admin dashboard for inventory control.",
+      description: "The Vertical Flight Society (VFS) is a global non-profit organization dedicated to advancing vertical flight technology, including helicopters, tiltrotors, and emerging electric vertical takeoff and landing (eVTOL) aircraft. Founded in 1943, VFS brings together engineers, researchers, industry leaders, and students to foster innovation in vertical flight. Through technical conferences, publications, and educational initiatives, the society promotes knowledge sharing and collaboration to solve key challenges in rotorcraft and future air mobility.",
       technologies: ["React", "Node.js", "MongoDB", "Stripe", "Redux", "Express"],
-      liveUrl: "https://example.com",
+      liveUrl: "https://vtol.org/",
       githubUrl: "https://github.com/example"
     },
     {
       id: 2,
-      title: "Task Management App",
-      subtitle: "Team Collaboration Tool",
+      title: "NIDAR",
+      subtitle: "Drone Application and Research",
       category: "Frontend",
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop",
-      description: "An intuitive task management application with drag-and-drop functionality, team collaboration features, and real-time updates. Features include project boards, task assignments, deadline tracking, and team communication tools.",
+      description: "The National Innovation Challenge for Drone Application & Research (NIDAR) is a premier competition by MeitY and Drone Federation of India. It invites student teams to build autonomous drones for disaster response and precision agriculture. With funding, mentorship, and startup support, NIDAR aims to drive innovation and make India a global drone hub by 2030.",
       technologies: ["Vue.js", "Firebase", "Tailwind CSS", "Vuex"],
-      liveUrl: "https://example.com",
+      liveUrl: "https://nidar.org.in/",
       githubUrl: "https://github.com/example"
     },
     {
@@ -74,7 +74,7 @@ const ProjectShowcase = () => {
       subtitle: "Analytics & Reporting Platform",
       category: "Data Science",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-      description: "Interactive dashboard for visualizing complex datasets with customizable charts, filters, and real-time data streaming capabilities. Includes advanced analytics, report generation, and data export functionality.",
+      description: "The National Innovation Challenge for Drone Application & Research (NIDAR) is a premier competition by MeitY and Drone Federation of India. It invites student teams to build autonomous drones for disaster response and precision agriculture. With funding, mentorship, and startup support, NIDAR aims to drive innovation and make India a global drone hub by 2030.",
       technologies: ["Python", "D3.js", "Flask", "PostgreSQL", "Pandas"],
       liveUrl: "https://example.com",
       githubUrl: "https://github.com/example"
@@ -104,13 +104,28 @@ const ProjectShowcase = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-900 text-white">
-      <div className="max-w-4xl mx-auto px-6 py-12">
+    <div className="min-h-screen bg-slate-900 text-white relative overflow-hidden">
+      {/* Earth Background with Cinematic Gradient */}
+      <div className="fixed inset-0 z-0">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-150"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=1920&h=1080&fit=crop')"
+          }}
+        />
+        {/* Multi-layered Cinematic Black Gradients */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/20 to-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-slate-900/20" />
+      </div>
+      
+      <div className="w-full px-6 py-12 relative z-10">
         {/* Header */}
-        <div className="mb-16">
-          <h1 className="text-4xl font-bold mb-4">Projects</h1>
-          <p className="text-gray-400 text-lg">
-            A collection of my recent work and creative solutions
+        <div className="mb-16 max-w-4xl mx-auto">
+          <h1 className="text-4xl font-bold mb-4 drop-shadow-lg">Prospects of Sammpaati</h1>
+          <p className="text-gray-300 text-lg drop-shadow-md">
+            Simultaneously tackling competitions
           </p>
         </div>
 
@@ -120,28 +135,28 @@ const ProjectShowcase = () => {
             <div key={project.id} className="relative">
               {/* Project Item */}
               <div 
-                className="border-b border-gray-700 last:border-b-0 relative z-10"
+                className="border-b border-gray-600/50 last:border-b-0 relative z-10"
                 onMouseEnter={() => handleMouseEnter(project)}
                 onMouseLeave={handleMouseLeave}
               >
                 <div
-                  className={`w-full py-8 flex items-center justify-between group hover:bg-gray-800/30 transition-all duration-200 px-4 -mx-4 cursor-pointer ${
-                    hoveredProject?.id === project.id ? 'bg-gray-800/50' : ''
+                  className={`w-full py-8 flex items-center justify-between group hover:bg-black/30 backdrop-blur-sm transition-all duration-200 px-4 -mx-4 cursor-pointer rounded-lg ${
+                    hoveredProject?.id === project.id ? 'bg-black/40 backdrop-blur-sm' : ''
                   }`}
                 >
                   <div className="flex-1 text-left">
-                    <h3 className={`text-2xl font-bold mb-2 transition-colors duration-200 ${
+                    <h3 className={`text-4xl font-bold mb-2 transition-colors duration-200 drop-shadow-lg ${
                       hoveredProject?.id === project.id ? 'text-blue-400' : 'group-hover:text-blue-400'
                     }`}>
                       {project.title}
                     </h3>
-                    <p className="text-gray-400 text-lg">
+                    <p className="text-gray-300 text-xl drop-shadow-md">
                       {project.subtitle}
                     </p>
                   </div>
                   <ChevronRight 
                     size={24} 
-                    className={`text-gray-500 transition-all duration-200 ${
+                    className={`text-gray-400 transition-all duration-200 drop-shadow-md ${
                       hoveredProject?.id === project.id 
                         ? 'text-white translate-x-1 rotate-90' 
                         : 'group-hover:text-white group-hover:translate-x-1'
@@ -152,7 +167,7 @@ const ProjectShowcase = () => {
 
               {/* Expanded Detail Panel */}
               <div 
-                className={`overflow-hidden bg-slate-800 border-l-4 border-blue-500 transition-all duration-500 ease-in-out relative z-0 ${
+                className={`overflow-hidden bg-black/60 backdrop-blur-md border-l-4 border-blue-500 transition-all duration-500 ease-in-out relative z-0 rounded-r-lg ${
                   hoveredProject?.id === project.id 
                     ? 'max-h-[500px] opacity-100 transform translate-y-0' 
                     : 'max-h-0 opacity-0 transform -translate-y-2'
@@ -184,9 +199,9 @@ const ProjectShowcase = () => {
                         <img
                           src={project.image}
                           alt={project.title}
-                          className="w-full h-48 object-cover rounded-lg"
+                          className="w-full h-48 object-cover rounded-lg shadow-xl"
                         />
-                        <div className={`absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium transition-all duration-300 delay-300 ${
+                        <div className={`absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium transition-all duration-300 delay-300 shadow-lg ${
                           hoveredProject?.id === project.id 
                             ? 'transform translate-y-0 opacity-100 scale-100' 
                             : 'transform -translate-y-2 opacity-0 scale-90'
@@ -205,7 +220,7 @@ const ProjectShowcase = () => {
                           href={project.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all hover:scale-105"
+                          className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all hover:scale-105 shadow-lg backdrop-blur-sm"
                         >
                           <ExternalLink size={16} />
                           Live Demo
@@ -214,7 +229,7 @@ const ProjectShowcase = () => {
                           href={project.githubUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center justify-center gap-2 bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all hover:scale-105"
+                          className="flex items-center justify-center gap-2 bg-gray-700/80 hover:bg-gray-600/80 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all hover:scale-105 shadow-lg backdrop-blur-sm"
                         >
                           <Github size={16} />
                           Source Code
@@ -233,13 +248,13 @@ const ProjectShowcase = () => {
                           ? 'transform translate-y-0 opacity-100' 
                           : 'transform translate-y-6 opacity-0'
                       }`}>
-                        <h2 className="text-2xl font-bold mb-2 text-blue-400">
+                        <h2 className="text-3xl font-bold mb-2 text-blue-400 drop-shadow-lg">
                           {project.title}
                         </h2>
-                        <p className="text-lg text-gray-400 mb-4">
+                        <p className="text-lg text-gray-300 mb-4 drop-shadow-md">
                           {project.subtitle}
                         </p>
-                        <p className="text-gray-300 leading-relaxed">
+                        <p className="text-gray-200 leading-relaxed drop-shadow-sm">
                           {project.description}
                         </p>
                       </div>
@@ -250,12 +265,12 @@ const ProjectShowcase = () => {
                           ? 'transform translate-y-0 opacity-100' 
                           : 'transform translate-y-6 opacity-0'
                       }`}>
-                        <h3 className="text-lg font-semibold mb-3 text-gray-200">Technologies Used</h3>
+                        <h3 className="text-lg font-semibold mb-3 text-gray-200 drop-shadow-md">Technologies Used</h3>
                         <div className="flex flex-wrap gap-2">
                           {project.technologies.map((tech, index) => (
                             <span 
                               key={tech} 
-                              className={`bg-gray-700 text-gray-200 px-3 py-1 rounded-lg text-sm font-medium transition-all duration-300 ${
+                              className={`bg-gray-700/80 backdrop-blur-sm text-gray-200 px-3 py-1 rounded-lg text-sm font-medium transition-all duration-300 shadow-md ${
                                 hoveredProject?.id === project.id 
                                   ? 'transform translate-y-0 opacity-100 scale-100' 
                                   : 'transform translate-y-2 opacity-0 scale-95'
@@ -280,12 +295,12 @@ const ProjectShowcase = () => {
         </div>
 
         {/* Footer Note */}
-        <div className="mt-16 pt-8 border-t border-gray-700">
-          <p className="text-gray-500 text-sm leading-relaxed">
+        <div className="mt-16 pt-8 border-t border-gray-600/50 max-w-4xl mx-auto">
+          <p className="text-gray-400 text-sm leading-relaxed drop-shadow-sm">
             Note: These projects showcase a wide range of technologies and approaches. 
             Please contact me for more detailed information about any specific project or collaboration opportunities.
           </p>
-          <button className="mt-4 text-gray-400 hover:text-white transition-colors underline decoration-gray-600 hover:decoration-white">
+          <button className="mt-4 text-gray-300 hover:text-white transition-colors underline decoration-gray-500 hover:decoration-white drop-shadow-sm">
             Know More
           </button>
         </div>
