@@ -269,7 +269,7 @@ const ProjectShowcase = () => {
                         <div className="flex flex-wrap gap-2">
                           {project.technologies.map((tech, index) => (
                             <span 
-                              key={tech} 
+                              key={tech}
                               className={`bg-gray-700/80 backdrop-blur-sm text-gray-200 px-3 py-1 rounded-lg text-sm font-medium transition-all duration-300 shadow-md ${
                                 hoveredProject?.id === project.id 
                                   ? 'transform translate-y-0 opacity-100 scale-100' 
