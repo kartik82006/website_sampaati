@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { ChevronRight, Users } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import TeamMembers from './TeamMembers';
+const images = import.meta.glob('./assets/*.{jpg,png,jpeg}', { eager: true });
+const getImage = (filename) => images[`./assets/${filename}`]?.default;
 
 const TeamLeaders = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -12,41 +14,71 @@ const TeamLeaders = () => {
   const teamLeaders = [
     {
       id: 1,
-      name: "Sarah Chen",
+      name: "Tanmay Agrawal",
       role: "Engineering Team Lead",
-      team: "engineering",
+      team: "Engineering",
       description: "Sarah leads our engineering efforts with 8+ years of experience in full-stack development. She's passionate about building scalable solutions and mentoring developers.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
+      image: getImage('DIVYANSH MEHTA.jpg'),
       teamSize: 12,
       teamLink: "/team/engineering/"
     },
     {
       id: 2,
-      name: "Marcus Rodriguez",
+      name: "Divyansh Mehta",
       role: "Design Team Lead",
-      team: "engineering",
-      description: "Marcus brings creative vision to life with his expertise in UX/UI design. He believes great design should be both beautiful and accessible to everyone.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+      team: "Design",
+      description: "Divyansh brings creative vision to life with his expertise in UX/UI design. He believes great design should be both beautiful and accessible to everyone.",
+      image: getImage('DIVYANSH MEHTA.jpg'),
       teamSize: 8,
       teamLink: "/team/design"
     },
     {
       id: 3,
-      name: "Priya Sharma",
+      name: "Aryan Sharma",
       role: "Product Team Lead",
-      team: "engineering",
+      team: "Product",
       description: "Priya drives product strategy and innovation. With her analytical mindset and user-focused approach, she ensures we build products that truly matter.",
-      image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=400&fit=crop&crop=face",
+      image: getImage('ARYAN SHARMA.jpg'),
       teamSize: 10,
       teamLink: "/team/product"
     },
     {
       id: 4,
-      name: "David Kim",
+      name: "Utkarsh Vats",
       role: "Marketing Team Lead",
-      team: "engineering",
-      description: "David crafts compelling narratives that connect our products with the right audience. His data-driven approach ensures every campaign delivers results.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+      team: "Marketing",
+      description: "Utkarsh crafts compelling narratives that connect our products with the right audience. His data-driven approach ensures every campaign delivers results.",
+      image: getImage('UTKARSH VATS.jpg'),
+      teamSize: 6,
+      teamLink: "/team/marketing"
+    },
+    {
+      id: 5,
+      name: "Arnav Verma",
+      role: "Marketing Team Lead",
+      team: "Marketing",
+      description: "Arnav crafts compelling narratives that connect our products with the right audience. His data-driven approach ensures every campaign delivers results.",
+      image: getImage('ARNAV VERMA.jpg'),
+      teamSize: 6,
+      teamLink: "/team/marketing"
+    },
+    {
+      id: 6,
+      name: "Dhruv Birthal",
+      role: "Marketing Team Lead",
+      team: "Marketing",
+      description: "Dhruv crafts compelling narratives that connect our products with the right audience. His data-driven approach ensures every campaign delivers results.",
+      image: getImage('DHRUV BIRTHAL.jpg'),
+      teamSize: 6,
+      teamLink: "/team/marketing"
+    },
+    {
+      id: 7,
+      name: "Harshdeep Singh Ahuja",
+      role: "Marketing Team Lead",
+      team: "Marketing",
+      description: "Harshdeep crafts compelling narratives that connect our products with the right audience. His data-driven approach ensures every campaign delivers results.",
+      image: getImage('HARSHDEEP SINGH AHUJA.jpg'),
       teamSize: 6,
       teamLink: "/team/marketing"
     }
@@ -72,7 +104,7 @@ const TeamLeaders = () => {
           </div>
 
           {/* Team Leaders Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 justify-center">
             {teamLeaders.map((leader) => (
               <div
                 key={leader.id}

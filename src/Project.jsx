@@ -70,11 +70,11 @@ const ProjectShowcase = () => {
     },
     {
       id: 3,
-      title: "Data Visualization Dashboard",
-      subtitle: "Analytics & Reporting Platform",
+      title: "Reusable Launch Vehicle",
+      subtitle: "idk",
       category: "Data Science",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-      description: "The National Innovation Challenge for Drone Application & Research (NIDAR) is a premier competition by MeitY and Drone Federation of India. It invites student teams to build autonomous drones for disaster response and precision agriculture. With funding, mentorship, and startup support, NIDAR aims to drive innovation and make India a global drone hub by 2030.",
+      description: "A type of spacecraft designed to return to Earth intact and be launched again multiple times, reducing the cost of space missions. Unlike traditional expendable rockets that are discarded after a single use, RLVs aim to revolutionize space travel by improving efficiency and sustainability. By reusing major components like boosters and engines, companies like SpaceX and ISRO are making space access more economical and environmentally friendly.",
       technologies: ["Python", "D3.js", "Flask", "PostgreSQL", "Pandas"],
       liveUrl: "https://example.com",
       githubUrl: "https://github.com/example"
@@ -120,9 +120,9 @@ const ProjectShowcase = () => {
         <div className="absolute inset-0 bg-slate-900/20" />
       </div>
       
-      <div className="w-full px-6 py-12 relative z-10">
+      <div className="w-full px-100 py-12 relative z-10">
         {/* Header */}
-        <div className="mb-16 max-w-4xl mx-auto">
+        <div className="mb-16 max-w-4xl mx-auto text-center">
           <h1 className="text-4xl font-bold mb-4 drop-shadow-lg">Prospects of Sammpaati</h1>
           <p className="text-gray-300 text-lg drop-shadow-md">
             Simultaneously tackling competitions
@@ -292,17 +292,6 @@ const ProjectShowcase = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Footer Note */}
-        <div className="mt-16 pt-8 border-t border-gray-600/50 max-w-4xl mx-auto">
-          <p className="text-gray-400 text-sm leading-relaxed drop-shadow-sm">
-            Note: These projects showcase a wide range of technologies and approaches. 
-            Please contact me for more detailed information about any specific project or collaboration opportunities.
-          </p>
-          <button className="mt-4 text-gray-300 hover:text-white transition-colors underline decoration-gray-500 hover:decoration-white drop-shadow-sm">
-            Know More
-          </button>
         </div>
       </div>
     </div>

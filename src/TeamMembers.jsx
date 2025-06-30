@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { ArrowLeft, Mail, Linkedin, Github, MapPin } from 'lucide-react';
 import { useParams, useNavigate } from 'react-router-dom';
 
+const images = import.meta.glob('../assets/*.{jpg,png,jpeg}', { eager: true });
+const getImage = (filename) => images[`./assets/${filename}`]?.default;
+
 const TeamMembers = (props) => {
   const { teamName } = useParams();
   const navigate = useNavigate();
