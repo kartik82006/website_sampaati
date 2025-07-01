@@ -2,18 +2,21 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/img1.jpeg'
 import './App.css'
+import Navbar from './Navbar'
+import { TimelineDemo } from './TimelineFloater'
+import Footer from './Footer'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div className="bg-center bg-cover h-screen flex items-center justify-center"
-      style={{ backgroundImage: `url(${viteLogo})` }}>
-        <div className="h-full w-full bg-black bg-opacity-50 flex items-center justify-center">
-          <h1 className="text-white text-4xl m-10 p-10 font-bold">Hello World!</h1>
+      <div className="relative">
+        <Navbar />
+        <div className="pt-[88px]"> {/* This padding matches navbar height */}
+          <TimelineDemo />
         </div>
-
+        <Footer />
       </div>
     </>
   )
