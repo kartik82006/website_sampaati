@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 import ProjectShowcase from './Project.jsx';
 import TeamLeaders from './TeamLeaders.jsx';
+import { TimelineDemo } from './TimelineFloater.jsx';
+
 
 const Home = () => (
   <>
     <ProjectShowcase />
-    <TeamLeaders />
+    
   </>
-);
+)
 
 export default Home;
+
+

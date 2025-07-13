@@ -18,7 +18,7 @@ const TeamLeaders = () => {
       role: "Engineering Team Lead",
       team: "Engineering",
       description: "Sarah leads our engineering efforts with 8+ years of experience in full-stack development. She's passionate about building scalable solutions and mentoring developers.",
-      image: getImage('DIVYANSH MEHTA.jpg'),
+      image: getImage(''),
       teamSize: 12,
       teamLink: "/team/engineering/"
     },
@@ -28,7 +28,7 @@ const TeamLeaders = () => {
       role: "Design Team Lead",
       team: "Design",
       description: "Divyansh brings creative vision to life with his expertise in UX/UI design. He believes great design should be both beautiful and accessible to everyone.",
-      image: getImage('DIVYANSH MEHTA.jpg'),
+      image: getImage('DIVYANSH MEHTA1.jpg'),
       teamSize: 8,
       teamLink: "/team/design"
     },
@@ -85,13 +85,13 @@ const TeamLeaders = () => {
   ];
 
   return (
-    <div className="min-h-screen relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden" id="team">
       {/* Content */}
       <div className="relative z-10 py-16 px-6">
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full mb-6 shadow-lg shadow-blue-500/25">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-400 to-[#287BFF] rounded-full mb-6 shadow-lg shadow-blue-500/25">
               <Users className="w-8 h-8 text-white" />
             </div>
             <h1 className="text-5xl font-bold text-white mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-purple-200">
@@ -123,7 +123,7 @@ const TeamLeaders = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
                   
                   {/* Team Badge */}
-                  <div className="absolute top-4 right-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium hover:scale-110 transition-all duration-300 shadow-lg">
+                  <div className="absolute top-4 right-4 bg-gradient-to-r from-blue-400 to-[#287BFF] text-white px-3 py-1 rounded-full text-sm font-medium hover:scale-110 transition-all duration-300 shadow-lg">
                     {leader.team}
                   </div>
                 </div>
@@ -168,7 +168,7 @@ const TeamLeaders = () => {
           </div>
 
           {/* Call to Action */}
-          <div className="text-center mt-16">
+          {/* <div className="text-center mt-16">
             <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-xl p-8 max-w-2xl mx-auto border border-white/20">
               <h2 className="text-2xl font-bold text-white mb-4">
                 Want to Join Our Team?
@@ -180,7 +180,7 @@ const TeamLeaders = () => {
                 View Open Positions
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

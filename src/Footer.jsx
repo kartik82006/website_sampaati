@@ -1,6 +1,7 @@
+import { FloatingDockDemo } from "./Floating_Contact";
 export default function Footer() {
   return (
-    <footer className="bg-[#0c121f] text-white px-4 sm:px-6 lg:px-8 py-12 border-t border-[#1e293b]">
+    <footer className="bg-[#0c121f] text-white px-4 sm:px-6 lg:px-8 py-12 border-t border-[#1e293b] z-20 absolute">
       <div className="max-w-7xl mx-auto">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
@@ -72,24 +73,11 @@ export default function Footer() {
         {/* Bottom Row */}
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex space-x-5 mb-4 md:mb-0">
-            {['facebook', 'twitter', 'youtube', 'linkedin', 'instagram'].map((social) => (
-              <a 
-                key={social} 
-                href="#" 
-                className="text-gray-400 hover:text-white transition-colors"
-                aria-label={social}
-              >
-                <img 
-                  src={`/icons/${social}.svg`} 
-                  alt={social} 
-                  className="h-5 w-5" 
-                />
-              </a>
-            ))}
+           <FloatingDockDemo/>
           </div>
           <div className="text-center md:text-right">
             <p className="text-xs text-gray-500">
-              © {new Date().getFullYear()} Skyroot Aerospace. All rights reserved.
+              © {new Date().getFullYear()} Team Sammpaati. All rights reserved.
             </p>
             <p className="text-xs text-gray-600 mt-1">
               Pioneering affordable access to space

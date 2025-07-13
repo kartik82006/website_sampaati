@@ -14,11 +14,11 @@ export default function Navbar() {
   }, []);
 
   const navItems = [
-    { id: 1, name: "Kalpana Fellowship", href: "#fellowship" },
+    { id: 1, name: "Projects", href: "#project" },
     { id: 2, name: "About", href: "#about" },
-    { id: 3, name: "Launch Services", href: "#services" },
-    { id: 4, name: "News Room", href: "#news" },
-    { id: 5, name: "Career", href: "#career" },
+    { id: 3, name: "Team", href: "#team" },
+    { id: 4, name: "Journey", href: "#news" },
+    
   ];
 
   return (
@@ -26,11 +26,13 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className={`fixed w-full z-50 px-10 py-6 flex items-center justify-between font-orbitron transition-all duration-300 ${
-        scrolled
-          ? "bg-[#1D2A44]/95 backdrop-blur-md shadow-lg"
-          : "bg-[#1D2A44]"
-      }`}
+      className={`fixed w-full z-50 px-10 py-2 flex items-center justify-between font-orbitron transition-all duration-300 rounded-xl mx-2
+         ${
+        
+          " backdrop-blur-md shadow-lg"
+          
+      }`
+    }
     >
       {/* Logo Section */}
       <motion.div
@@ -46,16 +48,16 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
-            SKYROOT
+            TEAM
           </motion.span>
           <br />
           <motion.span
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-sm font-light tracking-widest text-gray-300 ml-1"
+            className="text-xl font-light tracking-widest text-gray-300 ml-1"
           >
-            AEROSPACE
+            SAMMPAATI
           </motion.span>
         </div>
       </motion.div>

@@ -8,8 +8,8 @@ export function TimelineDemo() {
       content: (
         <div>
           <p
-            className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+            className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200" id="journey">
+            
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
