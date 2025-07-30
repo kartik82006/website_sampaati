@@ -1,24 +1,23 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [hoveredItem, setHoveredItem] = useState(null);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 10);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navItems = [
     { id: 1, name: "Projects", href: "#project" },
-    { id: 2, name: "About", href: "#about" },
+    { id: 2, name: "Journey", href: "#journey" },
     { id: 3, name: "Team", href: "#team" },
-    { id: 4, name: "Journey", href: "#news" },
-    
+    { id: 4, name: "About", href: "#about" },
   ];
 
   return (
@@ -26,28 +25,18 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className={`fixed w-full z-50 px-10 py-2 flex items-center justify-between font-orbitron transition-all duration-300 rounded-xl mx-2
-         ${
-        
-          " backdrop-blur-md shadow-lg"
-          
-      }`
-    }
+      className={`fixed w-full z-50 px-6 py-3 flex items-center justify-between font-orbitron transition-all duration-300 ${
+        scrolled ? " shadow-lg backdrop-blur-md" : ""
+      }`}
     >
-      {/* Logo Section */}
+      {/* Logo */}
       <motion.div
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         className="flex items-center gap-3 cursor-pointer"
       >
-        {/* Replace with actual logo image */}
-        {/*<img src="/logo.svg" alt="Skyroot Logo" className="h-10" />*/}
         <div className="text-white text-2xl font-medium leading-tight tracking-wide">
-          <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-          >
+          <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}>
             TEAM
           </motion.span>
           <br />
@@ -62,8 +51,8 @@ export default function Navbar() {
         </div>
       </motion.div>
 
-      {/* Navigation Links */}
-      <ul className="flex gap-8 items-center">
+      {/* Desktop Nav */}
+      <ul className="hidden md:flex gap-8 items-center">
         {navItems.map((item) => (
           <motion.li
             key={item.id}
@@ -75,14 +64,9 @@ export default function Navbar() {
               href={item.href}
               className="text-white text-sm tracking-widest font-light uppercase px-2 py-1 relative group"
             >
-              <motion.span
-                className="relative z-10"
-                whileHover={{ color: "#60A5FA" }}
-              >
+              <motion.span className="relative z-10" whileHover={{ color: "#60A5FA" }}>
                 {item.name}
               </motion.span>
-              
-              {/* Animated underline */}
               {hoveredItem === item.id && (
                 <motion.div
                   layoutId="navUnderline"
@@ -95,12 +79,7 @@ export default function Navbar() {
             </a>
           </motion.li>
         ))}
-        
-        {/* Contact Button */}
-        <motion.li
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
+        <motion.li whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
           <a
             href="#contact"
             className="ml-4 px-6 py-2 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full text-white text-sm font-medium tracking-wider uppercase shadow-lg hover:shadow-blue-500/30 transition-all duration-300"
@@ -109,6 +88,49 @@ export default function Navbar() {
           </a>
         </motion.li>
       </ul>
+
+      {/* Mobile Toggle Button */}
+      <div className="md:hidden">
+        <button onClick={() => setMobileOpen(!mobileOpen)} className="text-white">
+          {mobileOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="absolute top-full left-0 w-full text-white md:hidden backdrop-blur-xl shadow-xl rounded-b-xl px-6 py-4 z-40"
+          >
+            <ul className="space-y-4">
+              {navItems.map((item) => (
+                <li key={item.id}>
+                  <a
+                    href={item.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="block text-sm uppercase font-medium tracking-wide hover:text-blue-400 transition"
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+              <li>
+                <a
+                  href="#contact"
+                  onClick={() => setMobileOpen(false)}
+                  className="block w-full text-center px-4 py-2 mt-2 bg-blue-500 rounded-full font-semibold tracking-wide hover:bg-blue-600 transition"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.nav>
   );
 }
