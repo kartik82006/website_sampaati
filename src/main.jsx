@@ -5,11 +5,11 @@ import './index.css';
 import Home from './Home.jsx';
 import TeamMembers from './TeamMembers.jsx';
 import Navbar from './Navbar'
-import { TimelineDemo } from './TimelineFloater'
 import Footer from './Footer'
 import Hero from './Hero.jsx';
 import TeamLeaders from './TeamLeaders.jsx';
 import SectionDivider from './SectionDivider.jsx';
+import TimelineDemo from "./timeline-demo.jsx";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
