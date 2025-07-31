@@ -73,7 +73,7 @@ export default function Footer() {
         {/* Bottom Row */}
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex space-x-5 mb-4 md:mb-0">
-           <FloatingDockDemo/>
+           {/* <FloatingDockDemo/> */}
           </div>
           <div className="text-center md:text-right">
             <p className="text-xs text-gray-500">
