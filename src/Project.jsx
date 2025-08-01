@@ -72,8 +72,8 @@ const ProjectShowcase = () => {
     },
     {
       id: 3,
-      title: "Reusable Launch Vehicle",
-      subtitle: "idk",
+      title: "Sizing Code",
+      subtitle: "Evtol Sizing and Analysis",
       category: "Data Science",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
       description: "A type of spacecraft designed to return to Earth intact and be launched again multiple times, reducing the cost of space missions. Unlike traditional expendable rockets that are discarded after a single use, RLVs aim to revolutionize space travel by improving efficiency and sustainability. By reusing major components like boosters and engines, companies like SpaceX and ISRO are making space access more economical and environmentally friendly.",
@@ -81,35 +81,13 @@ const ProjectShowcase = () => {
       liveUrl: "https://example.com",
       githubUrl: "https://github.com/example"
     },
-    {
-      id: 4,
-      title: "Mobile Banking App",
-      subtitle: "Secure Financial Application",
-      category: "Mobile",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop",
-      description: "Secure mobile banking application with biometric authentication, transaction history, and budget tracking features. Includes bill payments, money transfers, and investment portfolio management.",
-      technologies: ["React Native", "Firebase", "Redux", "Plaid API"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example"
-    },
-    {
-      id: 5,
-      title: "AI Content Generator",
-      subtitle: "Machine Learning Application",
-      category: "AI/ML",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
-      description: "AI-powered content generation tool that creates high-quality articles, social media posts, and marketing copy using advanced language models. Features include content optimization, plagiarism detection, and multi-language support.",
-      technologies: ["Python", "OpenAI API", "FastAPI", "React", "TensorFlow"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example"
-    }
   ];
 
   return (<div className="min-h-screen bg-slate-900 text-white relative overflow-hidden" id="project">
   {/* Earth Background with Cinematic Gradient */}
   <div className="fixed inset-0 z-[-1]">
     <div
-      className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-150"
+      className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-150 "
       style={{
         backgroundImage: `url("/bg_img.jpg")`,
         backgroundSize: "contain",
@@ -141,12 +119,12 @@ const ProjectShowcase = () => {
         <div key={project.id} className="relative">
           {/* Project Item */}
           <div
-            className="border-b border-gray-600/50 last:border-b-0 relative z-10"
+            className="border-b border-gray-600/50 last:border-b-0 relative z-10 "
             onMouseEnter={() => handleMouseEnter(project)}
             onMouseLeave={handleMouseLeave}
           >
             <div
-              className={`w-full py-8 flex items-center justify-between group hover:bg-black/30 backdrop-blur-sm transition-all duration-200 px-4 -mx-4 cursor-pointer rounded-lg ${
+              className={`w-full py-8 flex items-center justify-between group hover:bg-black/30 backdrop-blur-sm transition-all duration-200 px-4 -mx-4 cursor-pointer rounded-lg  ${
                 hoveredProject?.id === project.id ? 'bg-black/40 backdrop-blur-sm' : ''
               }`}
             >
@@ -175,7 +153,7 @@ const ProjectShowcase = () => {
 
           {/* Expanded Detail Panel */}
           <div
-            className={`overflow-hidden bg-black/60 backdrop-blur-md border-l-4 border-blue-500 transition-all duration-500 ease-in-out relative z-0 rounded-r-lg ${
+            className={`overflow-y-scroll scrollbar-thin bg-black/60 backdrop-blur-md border-l-4 border-blue-500 transition-all duration-500 ease-in-out relative z-0 rounded-r-lg ${
               hoveredProject?.id === project.id
                 ? 'max-h-[500px] opacity-100 transform translate-y-0'
                 : 'max-h-0 opacity-0 transform -translate-y-2'
