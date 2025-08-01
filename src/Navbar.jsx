@@ -25,7 +25,7 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className={`fixed w-full z-50 px-6 py-3 flex items-center justify-between font-orbitron transition-all duration-300 ${
+      className={`fixed w-[95%] z-50 px-8 py-3 flex items-center justify-between font-orbitron transition-all duration-300 ${
         scrolled ? " shadow-lg backdrop-blur-md" : ""
       }`}
     >
