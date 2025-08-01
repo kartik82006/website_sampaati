@@ -10,6 +10,7 @@ import Hero from './Hero.jsx';
 import TeamLeaders from './TeamLeaders.jsx';
 import SectionDivider from './SectionDivider.jsx';
 import TimelineDemo from "./timeline-demo.jsx";
+import Carousel from './Carousel.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -21,6 +22,7 @@ createRoot(document.getElementById('root')).render(
                 <div className="pt-[38px]"> {/* This padding matches navbar height */}
                   <Hero/>
                   <Home />
+                  <Carousel />
                   <SectionDivider label = "Timeline Begins"/>
                   <TimelineDemo/>
                   <TeamLeaders/>
