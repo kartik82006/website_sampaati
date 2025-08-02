@@ -35,16 +35,13 @@ export default function Navbar() {
         whileTap={{ scale: 0.95 }}
         className="flex items-center gap-3 cursor-pointer"
       >
-        <div className="text-white text-2xl font-medium leading-tight tracking-wide">
-          <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}>
-            TEAM
-          </motion.span>
-          <br />
+        <div className="text-white text-2xl font-medium leading-tight tracking-wide p-4">
+          
           <motion.span
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-xl font-light tracking-widest text-gray-300 ml-1"
+            className="text-2xl font-light tracking-widest text-gray-300 ml-1"
           >
             SAMMPAATI
           </motion.span>
@@ -122,7 +119,7 @@ export default function Navbar() {
                 <a
                   href="#contact"
                   onClick={() => setMobileOpen(false)}
-                  className="block w-full text-center px-4 py-2 mt-2 bg-blue-500 rounded-full font-semibold tracking-wide hover:bg-blue-600 transition"
+                  className="block w-full text-center px-4 py-2 mt-2 bg-cyan-500 rounded-full font-semibold tracking-wide hover:bg-cyan-600 transition"
                 >
                   Contact
                 </a>

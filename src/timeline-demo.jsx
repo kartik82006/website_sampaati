@@ -1,45 +1,39 @@
 import React from "react";
-import { Timeline } from "./ui/TimeLine";
+import Timeline from "./ui/TimeLine";
+import { image } from "framer-motion/client";
 
-/*
-    Fix the import path casing issue by ensuring the import matches the actual file name.
-    If your file is named 'TimeLine.jsx', keep the import as is.
-    If your file is named 'timeline.jsx', change the import to:
-*/
-export default function timelineDemo() {
-  const data = [
-    {
-      title: "2024",
-      content: (
-        <div className="grid grid-cols-2 gap-4">
-          <img
-            src="https://assets.aceternity.com/templates/startup-1.webp"
-            className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
-          />
-          <img
-            src="https://assets.aceternity.com/templates/startup-2.webp"
-            className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
-          />
-          <img
-            src="https://assets.aceternity.com/templates/startup-3.webp"
-            className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
-          />
-          <img
-            src="https://assets.aceternity.com/templates/startup-4.webp"
-            className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
-          />
-        </div>
-      ),
-    },
-    {
-      title: "2023",
-      content: <p className="text-sm text-neutral-700">Cool stuff happened.</p>,
-    },
-  ];
+const timelineData = [
+  {
+    year: "2019",
+    description: "45 words is a simple, fast, and efficient way to create a word counter. It counts the number of words in a given text and returns the result. It is useful for writers, editors, and anyone who needs to keep track of word count.",
+    image: "grp_pic1.jpg",
+  },
+  {
+    year: "2020",
+    description: "50 words is a simple, fast, and efficient way to create a word counter. It counts the number of words in a given text and returns the result. It is useful for writers, editors, and anyone who needs to keep track of word count.",
+    image: "grp_pic2.jpeg",
+  },
+  {
+    year: "2021",
+    description: "60 words is a simple, fast, and efficient way to create a word counter. It counts the number of words in a given text and returns the result. It is useful for writers, editors, and anyone who needs to keep track of word count.",
+    image: "grp_pic3.jpg",
+  },
+  {
+    year: "2022",
+    description: "65 words is a simple, fast, and efficient way to create a word counter. It counts the number of words in a given text and returns the result. It is useful for writers, editors, and anyone who needs to keep track of word count.",
+    image: "grp_pic4.jpg",
+  },
+];
 
+function TimelineDemo() {
   return (
-    <div className="relative w-full overflow-clip">
-      <Timeline data={data} />
+    <div className="min-h-screen bg-[#0F172B]">
+      <h1 className="text-4xl font-bold text-center pt-10 text-cyan-600 bg-[#0F172B]">
+        Sammpaati's Timeline
+      </h1>
+      <Timeline items={timelineData} />
     </div>
   );
 }
+
+export default TimelineDemo;
