@@ -4,7 +4,7 @@ const departments = [
   {
     name: 'Engineering',
     description: 'Our engineering team builds and maintains all the core technology. They are the backbone of our digital infrastructure, constantly innovating and solving complex problems to ensure our products are robust and scalable.',
-    imageUrl: 'bg_img.jpg',
+    imageUrl: 'https://placehold.co/400x200/4F46E5/FFFFFF?text=Engineering',
     members: [
       { name: 'Alice Johnson', position: 'Software Engineer', memberImageUrl: 'https://placehold.co/100x100/A0B9D6/FFFFFF?text=AJ' },
       { name: 'Bob Williams', position: 'Senior Developer', memberImageUrl: 'https://placehold.co/100x100/F5D7A1/FFFFFF?text=BW' },
