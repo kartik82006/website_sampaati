@@ -1,4 +1,4 @@
-import { FloatingDockDemo } from "./Floating_Contact";
+
 export default function Footer() {
   return (
     <footer className="bg-[#0c121f] text-white px-4 sm:px-6 lg:px-8 py-12 border-t border-[#1e293b] z-20 absolute">
