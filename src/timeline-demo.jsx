@@ -5,7 +5,7 @@ import { image } from "framer-motion/client";
 const timelineData = [
   {
     year: "2019",
-    description: "45 words is a simple, fast, and efficient way to create a word counter. It counts the number of words in a given text and returns the result. It is useful for writers, editors, and anyone who needs to keep track of word count.",
+    description: "30 words is a simple, fast, and efficient way to create a word counter. It counts the number of words in a given text and returns the result. It is useful for writers, editors, and anyone who needs to keep track of word count.",
     image: "grp_pic1.jpg",
   },
   {
