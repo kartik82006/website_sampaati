@@ -11,6 +11,7 @@ import SectionDivider from './SectionDivider.jsx';
 import TimelineDemo from "./timeline-demo.jsx";
 import DepartmentCarousel from './Departments.jsx';
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
@@ -30,7 +31,7 @@ createRoot(document.getElementById('root')).render(
                 
               </div>
             </>} />
-        <Route path="/team/:teamName" element={<TeamMembers />} />
+        <Route path="/members/:department" element={<TeamMembers/>} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
