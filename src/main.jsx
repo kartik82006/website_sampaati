@@ -21,6 +21,7 @@ createRoot(document.getElementById('root')).render(
                 <div className="pt-[38px]"> {/* This padding matches navbar height */}
                   <Hero/>
                   <Home />
+                  
                   <SectionDivider label = "Timeline Begins"/>
                   <TimelineDemo/>
                   <DepartmentCarousel />
@@ -29,7 +30,7 @@ createRoot(document.getElementById('root')).render(
                 
               </div>
             </>} />
-        <Route path="/members/:department" element={<TeamMembers />} />
+        <Route path="/team/:teamName" element={<TeamMembers />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
