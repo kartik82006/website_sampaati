@@ -1,4 +1,5 @@
 import { FloatingDockDemo } from "./Floating_Contact";
+import { FaGithub, FaLinkedin, FaInstagram, FaTwitter  } from 'react-icons/fa';
 export default function Footer() {
   return (
     <footer id="contact" className="bg-[#0c121f] text-white px-4 sm:px-6 lg:px-8 py-12 border-t border-[#1e293b] z-20 absolute">
@@ -46,7 +47,7 @@ export default function Footer() {
           </div>
   
           {/* Links */}
-          <div className="md:col-span-12 lg:col-span-4 grid grid-cols-2 gap-8 mt-8 md:mt-0">
+          <div className="md:col-span-10 lg:col-span-3 grid grid-cols-2 gap-8 mt-8 md:mt-0">
             <div>
               <h4 className="mb-4 tracking-widest font-semibold text-sm uppercase">Company</h4>
               <ul className="space-y-3 text-sm">
@@ -57,13 +58,53 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h4 className="mb-4 tracking-widest font-semibold text-sm uppercase">Resources</h4>
+              <h4 className="mb-4 tracking-widest font-semibold text-sm uppercase">Contact</h4>
               <ul className="space-y-3 text-sm">
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Launch Services</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Technology</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Whistleblower</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
-              </ul>
+  <li>
+    <a
+      href="https://ui.aceternity.com/components/animated-tooltip"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
+    >
+      <FaInstagram size={16} />
+      Instagram
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://www.linkedin.com/company/team-sammpaati/posts/?feedView=all"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
+    >
+      <FaLinkedin size={16} />
+      LinkedIn
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://x.com/Sammpaati"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
+    >
+      <FaTwitter size={16} />
+      Twitter
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://github.com/MRCOdERRdev"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
+    >
+      <FaGithub size={16} />
+      GitHub
+    </a>
+  </li>
+</ul>
             </div>
           </div>
         </div>
@@ -71,12 +112,12 @@ export default function Footer() {
         <hr className="my-10 border-gray-800" />
   
         {/* Bottom Row */}
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-center items-center">
           <div className="text-center md:text-right">
             <p className="text-xs text-gray-500">
               © {new Date().getFullYear()} Team Sammpaati. All rights reserved.
             </p>
-            <p className="text-xs text-gray-600 mt-1">
+            <p className="text-xs text-right text-gray-600 mt-1">
               Pioneering affordable access to space
             </p>
           </div>
