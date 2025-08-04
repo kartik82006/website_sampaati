@@ -7,7 +7,6 @@ import TeamMembers from './TeamMembers.jsx';
 import Navbar from './Navbar'
 import Footer from './Footer'
 import Hero from './Hero.jsx';
-import TeamLeaders from './TeamLeaders.jsx';
 import SectionDivider from './SectionDivider.jsx';
 import TimelineDemo from "./timeline-demo.jsx";
 import DepartmentCarousel from './Departments.jsx'
@@ -31,7 +30,7 @@ createRoot(document.getElementById('root')).render(
                 
               </div>
             </>} />
-        <Route path="/members/:department" element={<TeamMembers/>} />
+        <Route path="/members/:department" element={<TeamMembers />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

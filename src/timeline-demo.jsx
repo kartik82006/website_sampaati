@@ -5,7 +5,7 @@ import { image } from "framer-motion/client";
 const timelineData = [
   {
     year: "2019",
-    description: "45 words is a simple, fast, and efficient way to create a word counter. It counts the number of words in a given text and returns the result. It is useful for writers, editors, and anyone who needs to keep track of word count.",
+    description: "30 words is a simple, fast, and efficient way to create a word counter. It counts the number of words in a given text and returns the result. It is useful for writers, editors, and anyone who needs to keep track of word count.",
     image: "grp_pic1.jpg",
   },
   {
@@ -27,7 +27,7 @@ const timelineData = [
 
 function TimelineDemo() {
   return (
-    <div className="min-h-screen bg-[#0F172B]">
+    <div id="journey" className="min-h-screen bg-[#0F172B]">
       <h1 className="text-4xl font-bold text-center pt-10 text-cyan-600 bg-[#0F172B]">
         Sammpaati's Timeline
       </h1>

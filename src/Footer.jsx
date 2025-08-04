@@ -1,15 +1,15 @@
 import { FloatingDockDemo } from "./Floating_Contact";
 export default function Footer() {
   return (
-    <footer className="bg-[#0c121f] text-white px-4 sm:px-6 lg:px-8 py-12 border-t border-[#1e293b] z-20 absolute">
+    <footer id="contact" className="bg-[#0c121f] text-white px-4 sm:px-6 lg:px-8 py-12 border-t border-[#1e293b] z-20 absolute">
       <div className="max-w-7xl mx-auto">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
           {/* Logo + Email */}
           <div className="md:col-span-4 lg:col-span-3">
             <img 
-              src="/logo.svg" 
-              alt="Skyroot Logo" 
+              src="/logo.png" 
+              alt="Sammpaati Logo" 
               className="h-16 mb-6 hover:opacity-90 transition-opacity" 
             />
             <p className="text-sm text-gray-400 mb-4">
@@ -19,8 +19,8 @@ export default function Footer() {
               <svg className="w-5 h-5 mr-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
-              <a href="mailto:info@skyroot.in" className="text-sm text-gray-400 hover:text-white transition-colors">
-                info@skyroot.in
+              <a href="mailto:teamsammpaati@thapar.edu" className="text-sm text-gray-400 hover:text-white transition-colors">
+                teamsammpaati@thapar.edu
               </a>
             </div>
           </div>
@@ -50,10 +50,10 @@ export default function Footer() {
             <div>
               <h4 className="mb-4 tracking-widest font-semibold text-sm uppercase">Company</h4>
               <ul className="space-y-3 text-sm">
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Careers</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">News</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                <li><a href="#timeline" className="text-gray-400 hover:text-white transition-colors">Timeline</a></li>
+                <li><a href="#project" className="text-gray-400 hover:text-white transition-colors">Projects</a></li>
+                <li><a href="#department" className="text-gray-400 hover:text-white transition-colors">Department</a></li>
               </ul>
             </div>
             <div>

@@ -16,8 +16,7 @@ export default function Navbar() {
   const navItems = [
     { id: 1, name: "Projects", href: "#project" },
     { id: 2, name: "Journey", href: "#journey" },
-    { id: 3, name: "Team", href: "#team" },
-    { id: 4, name: "About", href: "#about" },
+    { id: 3, name: "Department", href: "#department" },
   ];
 
   return (
@@ -79,7 +78,7 @@ export default function Navbar() {
         <motion.li whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
           <a
             href="#contact"
-            className="ml-4 px-6 py-2 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full text-white text-sm font-medium tracking-wider uppercase shadow-lg hover:shadow-blue-500/30 transition-all duration-300"
+            className="ml-4 px-6 py-2 bg-cyan-500 rounded-2xl text-white text-sm font-medium tracking-wider uppercase shadow-lg hover:bg-cyan-600 transition-all duration-200"
           >
             Contact
           </a>

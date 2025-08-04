@@ -77,7 +77,7 @@ const DepartmentCard = ({ department }) => {
           className="w-full h-auto rounded-lg mb-4 object-cover"
           onDragStart={(e) => e.preventDefault()}
         />
-        <h3 className="text-2xl font-extrabold mb-4 text-indigo-600 dark:text-indigo-400 text-center">
+        <h3 className="text-2xl font-extrabold mb-4 text-cyan-600 dark:text-cyan-400 text-center">
           {department.name}
         </h3>
         <p className="text-center text-gray-600 dark:text-gray-300 leading-relaxed">
@@ -87,7 +87,7 @@ const DepartmentCard = ({ department }) => {
           <h4 className="text-xl font-bold mb-2 text-gray-800 dark:text-gray-100">Department Members</h4>
           <button
             onClick={() => navigate(`/members/${encodeURIComponent(department.name)}`)}
-            className="w-full bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-indigo-700 transition"
+            className="w-full bg-cyan-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-cyan-700 transition"
           >
             View Members →
           </button>
@@ -125,18 +125,18 @@ const DepartmentCarousel = () => {
   };
 
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-screen font-sans overflow-hidden py-6">
+    <div id='department' className="relative flex flex-col items-center justify-center min-h-screen font-sans overflow-hidden py-6">
       <h2 className="text-5xl font-bold text-white text-center mb-4 mt-8">Departments</h2>
 
       <button
         onClick={() => scroll('left')}
-        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-indigo-600 text-white p-3 rounded-full shadow-lg z-10 hover:bg-indigo-700"
+        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-cyan-600 text-white p-3 rounded-full shadow-lg z-10 hover:bg-cyan-700"
       >
         ◀
       </button>
       <button
         onClick={() => scroll('right')}
-        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-indigo-600 text-white p-3 rounded-full shadow-lg z-10 hover:bg-indigo-700"
+        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-cyan-600 text-white p-3 rounded-full shadow-lg z-10 hover:bg-cyan-700"
       >
         ▶
       </button>
