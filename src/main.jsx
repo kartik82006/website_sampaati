@@ -9,7 +9,8 @@ import Footer from './Footer'
 import Hero from './Hero.jsx';
 import SectionDivider from './SectionDivider.jsx';
 import TimelineDemo from "./timeline-demo.jsx";
-import DepartmentCarousel from './Departments.jsx'
+import DepartmentCarousel from './Departments.jsx';
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
