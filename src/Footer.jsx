@@ -1,4 +1,4 @@
-import { FloatingDockDemo } from "./Floating_Contact";
+
 import { FaGithub, FaLinkedin, FaInstagram, FaTwitter  } from 'react-icons/fa';
 export default function Footer() {
   return (
