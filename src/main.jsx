@@ -31,7 +31,7 @@ createRoot(document.getElementById('root')).render(
                 
               </div>
             </>} />
-        <Route path="/members/:department" element={<TeamMembers/>} />
+        <Route path="/members/:department" element={<TeamMembers />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

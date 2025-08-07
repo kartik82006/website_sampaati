@@ -1,15 +1,17 @@
+import { FloatingDockDemo } from "./Floating_Contact";
+import { FaGithub, FaLinkedin, FaInstagram, FaTwitter  } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0c121f] text-white px-4 sm:px-6 lg:px-8 py-12 border-t border-[#1e293b] z-20 absolute">
+    <footer id="contact" className="bg-[#0c121f] text-white px-4 sm:px-6 lg:px-8 py-12 border-t border-[#1e293b] z-20 absolute">
       <div className="max-w-7xl mx-auto">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
           {/* Logo + Email */}
           <div className="md:col-span-4 lg:col-span-3">
             <img 
-              src="/logo.svg" 
-              alt="Skyroot Logo" 
+              src="/logo.png" 
+              alt="Sammpaati Logo" 
               className="h-16 mb-6 hover:opacity-90 transition-opacity" 
             />
             <p className="text-sm text-gray-400 mb-4">
@@ -19,8 +21,8 @@ export default function Footer() {
               <svg className="w-5 h-5 mr-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
-              <a href="mailto:info@skyroot.in" className="text-sm text-gray-400 hover:text-white transition-colors">
-                info@skyroot.in
+              <a href="mailto:teamsammpaati@thapar.edu" className="text-sm text-gray-400 hover:text-white transition-colors">
+                teamsammpaati@thapar.edu
               </a>
             </div>
           </div>
@@ -46,24 +48,64 @@ export default function Footer() {
           </div>
   
           {/* Links */}
-          <div className="md:col-span-12 lg:col-span-4 grid grid-cols-2 gap-8 mt-8 md:mt-0">
+          <div className="md:col-span-10 lg:col-span-3 grid grid-cols-2 gap-8 mt-8 md:mt-0">
             <div>
               <h4 className="mb-4 tracking-widest font-semibold text-sm uppercase">Company</h4>
               <ul className="space-y-3 text-sm">
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Careers</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">News</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                <li><a href="#timeline" className="text-gray-400 hover:text-white transition-colors">Timeline</a></li>
+                <li><a href="#project" className="text-gray-400 hover:text-white transition-colors">Projects</a></li>
+                <li><a href="#department" className="text-gray-400 hover:text-white transition-colors">Department</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="mb-4 tracking-widest font-semibold text-sm uppercase">Resources</h4>
+              <h4 className="mb-4 tracking-widest font-semibold text-sm uppercase">Contact</h4>
               <ul className="space-y-3 text-sm">
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Launch Services</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Technology</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Whistleblower</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
-              </ul>
+  <li>
+    <a
+      href="https://ui.aceternity.com/components/animated-tooltip"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
+    >
+      <FaInstagram size={16} />
+      Instagram
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://www.linkedin.com/company/team-sammpaati/posts/?feedView=all"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
+    >
+      <FaLinkedin size={16} />
+      LinkedIn
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://x.com/Sammpaati"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
+    >
+      <FaTwitter size={16} />
+      Twitter
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://github.com/MRCOdERRdev"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
+    >
+      <FaGithub size={16} />
+      GitHub
+    </a>
+  </li>
+</ul>
             </div>
           </div>
         </div>
@@ -71,12 +113,12 @@ export default function Footer() {
         <hr className="my-10 border-gray-800" />
   
         {/* Bottom Row */}
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-center items-center">
           <div className="text-center md:text-right">
             <p className="text-xs text-gray-500">
               © {new Date().getFullYear()} Team Sammpaati. All rights reserved.
             </p>
-            <p className="text-xs text-gray-600 mt-1">
+            <p className="text-xs text-right text-gray-600 mt-1">
               Pioneering affordable access to space
             </p>
           </div>
