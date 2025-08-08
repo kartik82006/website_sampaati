@@ -137,13 +137,13 @@ const DepartmentMembers = ({ departmentName = "Engineering" }) => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 py-12 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-[#0c121f] to-slate-800 py-12 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-12">
           <button
             onClick={handleBackClick}
-            className="flex items-center text-indigo-300 hover:text-white mb-6 transition-colors duration-200"
+            className="flex items-center text-cyan-300 hover:text-white mb-6 transition-colors duration-200"
           >
             <ArrowLeft className="w-5 h-5 mr-2" />
             <span className="font-medium">Back to Departments</span>
@@ -191,7 +191,7 @@ const DepartmentMembers = ({ departmentName = "Engineering" }) => {
                       <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                         {member.name}
                       </h3>
-                      <p className="text-indigo-600 dark:text-indigo-400 font-semibold mb-3">
+                      <p className="text-cyan-600 dark:text-cyan-400 font-semibold mb-3">
                         {member.position}
                       </p>
                       <div className="flex items-center text-gray-500 dark:text-gray-400 text-sm mb-4">
@@ -203,7 +203,7 @@ const DepartmentMembers = ({ departmentName = "Engineering" }) => {
                       <div className="flex space-x-3">
                         <a
                           href={`mailto:${member.email}`}
-                          className="text-gray-600 hover:text-indigo-600 transition-colors duration-200"
+                          className="text-gray-600 hover:text-cyan-600 transition-colors duration-200"
                         >
                           <Mail className="w-5 h-5" />
                         </a>
@@ -211,7 +211,7 @@ const DepartmentMembers = ({ departmentName = "Engineering" }) => {
                           href={member.linkedin}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-gray-600 hover:text-indigo-600 transition-colors duration-200"
+                          className="text-gray-600 hover:text-cyan-600 transition-colors duration-200"
                         >
                           <Linkedin className="w-5 h-5" />
                         </a>
@@ -220,7 +220,7 @@ const DepartmentMembers = ({ departmentName = "Engineering" }) => {
                             href={member.github}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-gray-600 hover:text-indigo-600 transition-colors duration-200"
+                            className="text-gray-600 hover:text-cyan-600 transition-colors duration-200"
                           >
                             <Github className="w-5 h-5" />
                           </a>
@@ -232,21 +232,21 @@ const DepartmentMembers = ({ departmentName = "Engineering" }) => {
 
                 {/* Back of Card */}
                 <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180">
-                  <div className="bg-gradient-to-br from-indigo-600 to-purple-700 rounded-2xl shadow-xl h-full p-6 flex flex-col justify-center text-white">
-                    <Quote className="w-8 h-8 text-indigo-200 mb-4" />
+                  <div className="bg-gradient-to-br from-cyan-800 to-cyan-800 rounded-2xl shadow-xl h-full p-6 flex flex-col justify-center text-white">
+                    <Quote className="w-8 h-8 text-cyan-200 mb-4" />
                     
                     <blockquote className="text-lg font-medium italic mb-6 leading-relaxed">
                       "{member.quote}"
                     </blockquote>
                     
-                    <div className="border-t border-indigo-300 pt-4">
-                      <p className="text-indigo-100 text-sm leading-relaxed">
+                    <div className="border-t border-cyan-300 pt-4">
+                      <p className="text-cyan-100 text-sm leading-relaxed">
                         {member.bio}
                       </p>
                     </div>
                     
                     <div className="mt-6 text-center">
-                      <span className="text-indigo-200 text-sm font-medium">
+                      <span className="text-cyan-200 text-sm font-medium">
                         — {member.name}
                       </span>
                     </div>
@@ -267,14 +267,14 @@ const DepartmentMembers = ({ departmentName = "Engineering" }) => {
               <div className="text-gray-300">Team Members</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-indigo-400 mb-2">
-                6+
+              <div className="text-4xl font-bold text-cyan-400 mb-2">
+                10+
               </div>
-              <div className="text-gray-300">Years Average Experience</div>
+              <div className="text-gray-300">Months Average Experience</div>
             </div>
             <div>
               <div className="text-4xl font-bold text-purple-400 mb-2">
-                15
+                4
               </div>
               <div className="text-gray-300">Projects Completed</div>
             </div>
@@ -289,8 +289,8 @@ const DepartmentMembers = ({ departmentName = "Engineering" }) => {
           <p className="text-gray-300 mb-8 max-w-2xl mx-auto text-lg">
             We're always looking for talented individuals who share our passion for innovation and excellence.
           </p>
-          <button className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg">
-            View Open Positions
+          <button className="bg-cyan-600 hover:bg-cyan-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg">
+            Apply Now
           </button>
         </div>
       </div>
