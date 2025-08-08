@@ -86,15 +86,15 @@ const ProjectShowcase = () => {
   return (<div className="min-h-screen bg-slate-900 text-white relative overflow-hidden" id="project">
   {/* Earth Background with Cinematic Gradient */}
   <div className="fixed inset-0 z-[-1]">
-    <div
-      className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-150 "
-      style={{
-        backgroundImage: `url("/bg_img.jpg")`,
-        backgroundSize: "contain",
-        backgroundPosition: "center",
-        height: "100vh",
-      }}
-    />
+    <div className="fixed inset-0 -z-10">
+  <img
+    src="/bg_img.jpg"
+    alt="Background"
+    className="w-full h-full object-contain object-center scale-150"
+    loading="eager"
+  />
+</div>
+
 
     {/* Multi-layered Cinematic Black Gradients */}
     <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/20 to-black/50 z-0" />

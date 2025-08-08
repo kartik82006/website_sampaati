@@ -1,9 +1,10 @@
+import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
-import { ArrowLeft, Mail, Linkedin, Github, MapPin, Quote } from 'lucide-react';
+import { ArrowLeft, Mail, Quote , MapPin,Linkedin,Github} from 'lucide-react';
 
 const DepartmentMembers = ({ departmentName = "Engineering" }) => {
   const [hoveredCard, setHoveredCard] = useState(null);
-
+  const navigate = useNavigate();
   // Department members data - easily customizable
   const departmentMembersData = {
     Engineering: [
@@ -131,8 +132,8 @@ const DepartmentMembers = ({ departmentName = "Engineering" }) => {
   const currentMembers = departmentMembersData[departmentName] || departmentMembersData.Engineering;
 
   const handleBackClick = () => {
-    // This would typically navigate back to the departments view
-    console.log("Navigate back to departments");
+    
+    navigate(-1);
   };
 
   return (

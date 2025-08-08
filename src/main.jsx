@@ -10,11 +10,13 @@ import Hero from './Hero.jsx';
 import SectionDivider from './SectionDivider.jsx';
 import TimelineDemo from "./timeline-demo.jsx";
 import DepartmentCarousel from './Departments.jsx';
-
+import DepartmentMembers from './TeamMembers.jsx';
+import ScrollToTop from './ScrollToTop.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
+    <ScrollToTop />
       <Routes>
         <Route path="/" element={<>
               <div className="relative">
@@ -31,7 +33,8 @@ createRoot(document.getElementById('root')).render(
                 
               </div>
             </>} />
-        <Route path="/members/:department" element={<TeamMembers />} />
+            <Route path="/" element={<DepartmentCarousel />} />
+        <Route path="/members/:department" element={<DepartmentMembers />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
