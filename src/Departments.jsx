@@ -4,7 +4,7 @@ const departments = [
   {
     name: 'Aerodynamics',
     description: 'Our aerodynamics team specializes in the study and application of airflow and its effects on objects in motion. They work on optimizing vehicle designs for improved performance and efficiency.',
-    imageUrl: 'https://placehold.co/400x200/0c121f/FFFFFF?text=Aerodynamics',
+    imageUrl: 'aerodyanmics_dept.png',
     members: [
       { name: 'Alice Johnson', position: 'Software Engineer', memberImageUrl: 'https://placehold.co/100x100/A0B9D6/FFFFFF?text=AJ' },
       { name: 'Bob Williams', position: 'Senior Developer', memberImageUrl: 'https://placehold.co/100x100/F5D7A1/FFFFFF?text=BW' },
@@ -14,7 +14,7 @@ const departments = [
   {
     name: 'Mechanical',
     description: 'The mechanical team focuses on the design, analysis, and manufacturing of mechanical systems. They work on projects ranging from automotive engineering to robotics, ensuring that all moving parts function seamlessly together.',
-    imageUrl: 'https://placehold.co/400x200/0c121f/FFFFFF?text=Mechanical',
+    imageUrl: 'mechanical_dept.jpg',
     members: [
       { name: 'David Smith', position: 'Mechanical Engineer', memberImageUrl: 'https://placehold.co/100x100/A0B9D6/FFFFFF?text=DS' },
       { name: 'Eve Brown', position: 'CAD Specialist', memberImageUrl: 'https://placehold.co/100x100/F5D7A1/FFFFFF?text=EB' },
@@ -22,19 +22,19 @@ const departments = [
     ]
   },
   {
-    name: 'Content',
-    description: 'The content team is responsible for creating and managing all written and visual content. They work closely with marketing and product teams to ensure that all content aligns with brand messaging and user needs.',
-    imageUrl: 'https://placehold.co/400x200/0c121f/FFFFFF?text=Content',
+    name: 'Techies',
+    description: 'The tech department is responsible for developing and maintaining the technology infrastructure of the company. They work on projects ranging from software development to system administration, ensuring that all technical systems run smoothly.',
+    imageUrl: 'tech_dept.jpg',
     members: [
-      { name: 'Grace Wilson', position: 'UX/UI Designer', memberImageUrl: 'https://placehold.co/100x100/A0B9D6/FFFFFF?text=GW' },
-      { name: 'Heidi Green', 'position': 'Product Designer', memberImageUrl: 'https://placehold.co/100x100/F5D7A1/FFFFFF?text=HG' },
-      { name: 'Ivan Turner', 'position': 'Research Lead', memberImageUrl: 'https://placehold.co/100x100/D0B8E1/FFFFFF?text=IT' },
+      { name: 'Mike Evans', position: 'Sales Lead', memberImageUrl: 'https://placehold.co/100x100/A0B9D6/FFFFFF?text=ME' },
+      { name: 'Nancy King', position: 'Account Executive', memberImageUrl: 'https://placehold.co/100x100/F5D7A1/FFFFFF?text=NK' },
+      { name: 'Oscar Lee', position: 'Business Development', memberImageUrl: 'https://placehold.co/100x100/D0B8E1/FFFFFF?text=OL' },
     ]
   },
   {
     name: 'Electrical & Electronics',
-    description: 'The electrical & electronics team is responsible for designing and developing electrical systems and components. They work on projects ranging from circuit design to embedded systems, ensuring that all electronic elements function seamlessly together.',
-    imageUrl: 'https://placehold.co/400x200/0c121f/FFFFFF?text=Electrical+%26+Electronics',
+    description: 'The electrical & electronics team is responsible for designing and developing electrical systems. They work on projects ranging from circuit design to embedded systems, ensuring that all electronic elements function together.',
+    imageUrl: 'electronics_dept.jpg',
     members: [
       { name: 'Judy Hall', position: 'HR Manager', memberImageUrl: 'https://placehold.co/100x100/A0B9D6/FFFFFF?text=JH' },
       { name: 'Karl Miller', position: 'Recruitment Specialist', memberImageUrl: 'https://placehold.co/100x100/F5D7A1/FFFFFF?text=KM' },
@@ -42,13 +42,13 @@ const departments = [
     ]
   },
   {
-    name: 'Techies',
-    description: 'The tech department is responsible for developing and maintaining the technology infrastructure of the company. They work on projects ranging from software development to system administration, ensuring that all technical systems run smoothly.',
-    imageUrl: 'https://placehold.co/400x200/0c121f/FFFFFF?text=Techies',
+    name: 'Content',
+    description: 'The content team is responsible for creating and managing all written and visual content. They work closely with marketing and product teams to ensure that all content aligns with brand messaging and user needs.',
+    imageUrl: 'content_dept.jpg',
     members: [
-      { name: 'Mike Evans', position: 'Sales Lead', memberImageUrl: 'https://placehold.co/100x100/A0B9D6/FFFFFF?text=ME' },
-      { name: 'Nancy King', position: 'Account Executive', memberImageUrl: 'https://placehold.co/100x100/F5D7A1/FFFFFF?text=NK' },
-      { name: 'Oscar Lee', position: 'Business Development', memberImageUrl: 'https://placehold.co/100x100/D0B8E1/FFFFFF?text=OL' },
+      { name: 'Grace Wilson', position: 'UX/UI Designer', memberImageUrl: 'https://placehold.co/100x100/A0B9D6/FFFFFF?text=GW' },
+      { name: 'Heidi Green', 'position': 'Product Designer', memberImageUrl: 'https://placehold.co/100x100/F5D7A1/FFFFFF?text=HG' },
+      { name: 'Ivan Turner', 'position': 'Research Lead', memberImageUrl: 'https://placehold.co/100x100/D0B8E1/FFFFFF?text=IT' },
     ]
   },
 ];
@@ -60,7 +60,7 @@ const DepartmentCard = ({ department }) => {
 
   return (
     <div className="scroll-snap-start p-4 flex-shrink-0 w-[80vw] sm:w-[60vw] md:w-[40vw] lg:w-[30vw] xl:w-[25vw] transition-transform duration-500 ease-in-out">
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 flex flex-col items-center transition-all duration-500 ease-in-out transform hover:scale-105 h-[36rem]">
+      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 flex flex-col items-center transition-all duration-500 ease-in-out transform hover:scale-105 h-[42rem]">
         <img
           src={department.imageUrl}
           alt={`Image for ${department.name} department`}
