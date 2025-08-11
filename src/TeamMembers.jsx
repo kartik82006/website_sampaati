@@ -7,124 +7,117 @@ const DepartmentMembers = ({ departmentName = "Engineering" }) => {
   const navigate = useNavigate();
   // Department members data - easily customizable
   const departmentMembersData = {
-    Engineering: [
+    Aerodynamics: [
       {
         id: 1,
-        name: "Alice Johnson",
-        position: "Software Engineer",
+        name: "Aryan Sharma",
+        position: "Team Member",
         photo: "https://images.unsplash.com/photo-1494790108755-2616b612b1e5?w=400&h=400&fit=crop&crop=face",
-        location: "San Francisco, CA",
-        email: "alice.johnson@company.com",
-        linkedin: "https://linkedin.com/in/alicejohnson",
-        github: "https://github.com/alicejohnson",
-        quote: "Code is poetry written in logic. Every bug is just a plot twist waiting to be resolved.",
-        bio: "Passionate about creating elegant solutions to complex problems. Specializes in React and Node.js with 5+ years of experience."
+        location: "",
+        email: "aryan.sharma@company.com",
+        linkedin: "https://linkedin.com/in/aryansharma",
+        github: "https://github.com/aryansharma",
+        quote: `"वृक्ष हों भले खड़े,
+हों घने, हों बड़े,
+एक पत्र छाँह भी
+मांग मत! मांग मत! मांग मत!
+अग्निपथ! अग्निपथ! अग्निपथ!"`,
+        bio: "I am passionate about Aerospace and anything that flies. I want to serve my nation and build it better stronger and bigger."
       },
       {
         id: 2,
-        name: "Bob Williams",
-        position: "Senior Developer",
+        name: "Parth Gupta",
+        position: "Team Member",
         photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
         location: "Austin, TX",
-        email: "bob.williams@company.com",
-        linkedin: "https://linkedin.com/in/bobwilliams",
-        github: "https://github.com/bobwilliams",
-        quote: "The best code is not just functional, but tells a story that other developers can easily follow.",
-        bio: "Full-stack developer with expertise in microservices architecture. Mentors junior developers and leads code review sessions."
+        email: "parth.gupta@company.com",
+        linkedin: "https://linkedin.com/in/parthgupta",
+        github: "https://github.com/parthgupta",
+        quote: "A boy full of zeal and compassion who wants his actions to have an immortal impact.",
+        bio: "I am passionate about the aerodynamics of every flying machine, design optimisation, structural and fluid flow analysis."
       },
-      {
-        id: 3,
-        name: "Charlie Davis",
-        position: "DevOps Engineer",
-        photo: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?w=400&h=400&fit=crop&crop=face",
-        location: "Seattle, WA",
-        email: "charlie.davis@company.com",
-        linkedin: "https://linkedin.com/in/charliedavis",
-        github: "https://github.com/charliedavis",
-        quote: "Infrastructure should be invisible when it works perfectly, and obvious when it needs attention.",
-        bio: "Cloud infrastructure specialist with AWS certifications. Passionate about automation and building resilient systems."
-      },
-      {
-        id: 4,
-        name: "Diana Park",
-        position: "Frontend Developer",
-        photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
-        location: "New York, NY",
-        email: "diana.park@company.com",
-        linkedin: "https://linkedin.com/in/dianapark",
-        github: "https://github.com/dianapark",
-        quote: "Great user interfaces are invisible - they just work exactly as users expect them to.",
-        bio: "UI/UX focused developer with a keen eye for design. Specializes in creating accessible and responsive web applications."
-      }
+      
     ],
-    Marketing: [
+    Content: [
       {
         id: 1,
-        name: "David Smith",
-        position: "Marketing Manager",
+        name: "Prem Kumar",
+        position: "Team Member",
         photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
         location: "Los Angeles, CA",
-        email: "david.smith@company.com",
-        linkedin: "https://linkedin.com/in/davidsmith",
-        quote: "Marketing is not about the stuff you make, but the stories you tell and the connections you create.",
-        bio: "Strategic marketing leader with 8+ years in digital marketing. Expert in brand positioning and growth marketing strategies."
+        email: "prem.kumar@company.com",
+        linkedin: "https://linkedin.com/in/premkumar",
+        quote: "There may be people who have more talent than you, but there’s no excuse for anyone to work harder than you do.",
+        bio: "I love doing creative work and making things from scratch. Content gives me the same opportunity and come up with my ideas in more framed manner."
       },
       {
         id: 2,
-        name: "Eve Brown",
-        position: "Content Strategist",
+        name: "Armaan",
+        position: "Team Member",
         photo: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
         location: "Chicago, IL",
-        email: "eve.brown@company.com",
-        linkedin: "https://linkedin.com/in/evebrown",
-        quote: "Content is the bridge between what a company wants to say and what customers want to hear.",
-        bio: "Creative content strategist who crafts compelling narratives. Specializes in multi-channel content marketing and SEO optimization."
+        email: "arman@company.com",
+        linkedin: "https://linkedin.com/in/arman",
+        quote: "I tell the stories that others remember.",
+        bio: "I’m deeply passionate about expanding my knowledge  exploring facts, history, and general knowledge has always inspired me to see the world in new ways. Alongside this, I dream of creating my own film one day, bringing my stories to life by writing scripts and directing them. For me, it’s about blending curiosity with creativity to share ideas that can both inform and inspire."
       },
-      {
-        id: 3,
-        name: "Frank White",
-        position: "Social Media Specialist",
-        photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
-        location: "Miami, FL",
-        email: "frank.white@company.com",
-        linkedin: "https://linkedin.com/in/frankwhite",
-        quote: "Social media is where brands become human and conversations become communities.",
-        bio: "Social media expert with expertise in community building and viral content creation. Manages campaigns across all major platforms."
-      }
     ],
-    "Product Design": [
+    "Electrical & Electronics": [
       {
         id: 1,
-        name: "Grace Wilson",
-        position: "UX/UI Designer",
+        name: "Akshat Kumar ",
+        position: "Team Member",
         photo: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop&crop=face",
         location: "Portland, OR",
         email: "grace.wilson@company.com",
         linkedin: "https://linkedin.com/in/gracewilson",
-        quote: "Design is not just how it looks and feels. Design is how it works and why it matters to people.",
-        bio: "User-centered designer with a background in psychology. Creates intuitive interfaces that solve real user problems."
+        quote: "Ending sahi nahi hai.... Koi baat nahi, apni kahani hai, ending badal denge.",
+        bio: "I’m passionate about exploring electronics, improving my tennis skills, and immersing myself in movies that inspire creativity, curiosity, and innovative thinking both on and off the court."
+
       },
       {
         id: 2,
-        name: "Heidi Green",
-        position: "Product Designer",
+        name: "Prem Kumar",
+        position: "Team Member",
         photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=face",
         location: "Boston, MA",
         email: "heidi.green@company.com",
         linkedin: "https://linkedin.com/in/heidigreen",
-        quote: "Every pixel has a purpose, every interaction tells a story, and every design decision shapes the user's journey.",
-        bio: "Product designer focused on creating delightful user experiences. Expert in design systems and cross-platform consistency."
+        quote: "There may be people who have more talent than you, but there’s no excuse for anyone to work harder than you do.",
+        bio: "I love doing things related to my field and enjoy doing work, cause I am here because hard work wins!"
       },
       {
         id: 3,
-        name: "Ivan Turner",
-        position: "Research Lead",
+        name: "Jahanvi Kalia.",
+        position: "Team Member",
         photo: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=face",
         location: "Denver, CO",
         email: "ivan.turner@company.com",
         linkedin: "https://linkedin.com/in/ivanturner",
-        quote: "Data tells us what users do, but research tells us why they do it and how we can help them do it better.",
-        bio: "UX researcher passionate about understanding user behavior. Conducts usability studies and translates insights into actionable design improvements."
+        quote: "The only person you are destined to become is the person you decide to be.",
+        bio: "I’m deeply passionate about blending electronics, intelligent systems, and innovation to breathe life into eVTOL technology—crafting sensor-driven solutions that elevate safety, performance, and the future of aerial mobility."
+      },
+      {
+        id: 4,
+        name: "Srishti Garg",
+        position: "Team Member",
+        photo: "https://images.unsplash.com/photo-1517841905240-472988d4e47f?w=400&h=400&fit=crop&crop=face",
+        location: "Seattle, WA",
+        email: "srishti.garg@company.com",
+        linkedin: "https://linkedin.com/in/srishtigarg",
+        quote: "You cannot control the waves, but you can learn to surf.",
+        bio: "I’m passionate about electronics and innovation, exploring how circuits and technology can solve real-world problems and create smarter, more efficient solutions for everyday life."
+      },
+      {
+        id: 5,
+        name: "Aarav Singh",
+        position: "Team Member",
+        photo: "https://images.unsplash.com/photo-1517841905240-472988d4e47f?w=400&h=400&fit=crop&crop=face",
+        location: "Seattle, WA",
+        email: "aarav.singh@company.com",
+        linkedin: "https://linkedin.com/in/aaravsingh",
+        quote: "Innovation distinguishes between a leader and a follower.",
+        bio: "I’m passionate about exploring electronics, improving my tennis skills, and immersing myself in movies that inspire creativity, curiosity, and innovative thinking both on and off the court."
       }
     ]
   };

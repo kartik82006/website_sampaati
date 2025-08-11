@@ -120,20 +120,20 @@ const DepartmentCarousel = () => {
 
       <button
         onClick={() => scroll('left')}
-        className="absolute text-2xl left-2 top-1/2 transform -translate-y-1/2 bg-[#0A101E] text-white p-4 rounded-xl shadow-lg z-10 hover:bg-cyan-500"
+        className="absolute text-4xl left-2 top-[35vw] transform -translate-y-1/2 bg-[#0A101E] text-white pt-2 p-4 rounded-xl shadow-lg z-10 hover:bg-cyan-500"
       >
         {'<'}
       </button>
       <button
         onClick={() => scroll('right')}
-        className="absolute text-2xl right-2 top-1/2 transform -translate-y-1/2 bg-[#0A101E] text-white p-4 rounded-xl shadow-lg z-10 hover:bg-cyan-500"
+        className="absolute text-4xl right-2 top-[35vw] transform -translate-y-1/2 bg-[#0A101E] text-white pt-2 p-4 rounded-xl shadow-lg z-10 hover:bg-cyan-500"
       >
         {'>'}
       </button>
 
       <div
         ref={scrollRef}
-        className="flex overflow-x-auto scrollbar-thin px-6 py-4 space-x-8 w-full max-w-[95vw] xl:max-w-7xl scroll-snap-x scroll-snap-mandatory"
+        className="flex overflow-x-auto scrollbar-thin px-6  py-4 space-x-8 w-full max-w-[95vw] xl:max-w-7xl scroll-snap-x scroll-snap-mandatory"
       >
         {departments.map((department, index) => (
           <DepartmentCard key={index} department={department} />
