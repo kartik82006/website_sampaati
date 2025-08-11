@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import { ArrowLeft, Mail, Quote , MapPin,Linkedin,Github} from 'lucide-react';
 
-const DepartmentMembers = ({ departmentName = "Engineering" }) => {
+const DepartmentMembers = ({ departmentName = "Aerodynamics" }) => {
   const [hoveredCard, setHoveredCard] = useState(null);
   const navigate = useNavigate();
   // Department members data - easily customizable
