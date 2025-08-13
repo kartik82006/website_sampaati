@@ -24,32 +24,17 @@ const departments = [
   {
     name: 'Techies',
     description: 'The tech department is responsible for developing and maintaining the technology infrastructure of the company. They work on projects ranging from software development to system administration, ensuring that all technical systems run smoothly.',
-    imageUrl: 'tech_dept.jpg',
-    members: [
-      { name: 'Mike Evans', position: 'Sales Lead', memberImageUrl: 'https://placehold.co/100x100/A0B9D6/FFFFFF?text=ME' },
-      { name: 'Nancy King', position: 'Account Executive', memberImageUrl: 'https://placehold.co/100x100/F5D7A1/FFFFFF?text=NK' },
-      { name: 'Oscar Lee', position: 'Business Development', memberImageUrl: 'https://placehold.co/100x100/D0B8E1/FFFFFF?text=OL' },
-    ]
+    imageUrl: 'tech_dept.jpg'
   },
   {
     name: 'Electrical & Electronics',
     description: 'The electrical & electronics team is responsible for designing and developing electrical systems. They work on projects ranging from circuit design to embedded systems, ensuring that all electronic elements function together.',
-    imageUrl: 'electronics_dept.jpg',
-    members: [
-      { name: 'Judy Hall', position: 'HR Manager', memberImageUrl: 'https://placehold.co/100x100/A0B9D6/FFFFFF?text=JH' },
-      { name: 'Karl Miller', position: 'Recruitment Specialist', memberImageUrl: 'https://placehold.co/100x100/F5D7A1/FFFFFF?text=KM' },
-      { name: 'Laura Clark', position: 'HR Generalist', memberImageUrl: 'https://placehold.co/100x100/D0B8E1/FFFFFF?text=LC' },
-    ]
+    imageUrl: 'electronics_dept.jpg'
   },
   {
     name: 'Content',
     description: 'The content team is responsible for creating and managing all written and visual content. They work closely with marketing and product teams to ensure that all content aligns with brand messaging and user needs.',
-    imageUrl: 'content_dept.jpg',
-    members: [
-      { name: 'Grace Wilson', position: 'UX/UI Designer', memberImageUrl: 'https://placehold.co/100x100/A0B9D6/FFFFFF?text=GW' },
-      { name: 'Heidi Green', 'position': 'Product Designer', memberImageUrl: 'https://placehold.co/100x100/F5D7A1/FFFFFF?text=HG' },
-      { name: 'Ivan Turner', 'position': 'Research Lead', memberImageUrl: 'https://placehold.co/100x100/D0B8E1/FFFFFF?text=IT' },
-    ]
+    imageUrl: 'content_dept.jpg'
   },
 ];
 
