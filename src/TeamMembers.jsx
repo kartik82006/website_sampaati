@@ -110,14 +110,179 @@ const DepartmentMembers = ({ departmentName = "Aerodynamics" }) => {
       },
       {
         id: 5,
-        name: "Aarav Singh",
+        name: "Arkaprovo Pal",
         position: "Team Member",
         photo: "https://images.unsplash.com/photo-1517841905240-472988d4e47f?w=400&h=400&fit=crop&crop=face",
         location: "Seattle, WA",
         email: "aarav.singh@company.com",
         linkedin: "https://linkedin.com/in/aaravsingh",
-        quote: "Innovation distinguishes between a leader and a follower.",
-        bio: "I’m passionate about exploring electronics, improving my tennis skills, and immersing myself in movies that inspire creativity, curiosity, and innovative thinking both on and off the court."
+        quote: "Circuits burned. Mind fried. Still blaming the capacitor.",
+        bio: "Everything involving circuits and electronics with vlsi chip designing being the cherry on top."
+      },
+      {
+        id: 6,
+        name: "Mehma Kaur",
+        position: "Team Member",
+        photo: "https://images.unsplash.com/photo-1517841905240-472988d4e47f?w=400&h=400&fit=crop&crop=face",
+        location: "Seattle, WA",
+        email: "mehma.kaur@company.com",
+        linkedin: "https://linkedin.com/in/mehmakaur",
+        quote: "You deserve everything your heart desires",
+        bio: "I'm passionate about working in my field of interest and give my best to contribute to my full potential."
+      }
+      ,
+      {
+        id: 7,
+        name: "Arnav Verma",
+        position: "Team Member",
+        photo: "https://images.unsplash.com/photo-1517841905240-472988d4e47f?w=400&h=400&fit=crop&crop=face",
+        location: "Seattle, WA",
+        email: "aarav.singh@company.com",
+        linkedin: "https://linkedin.com/in/aaravsingh",
+        quote: "Do it for the plot ",
+        bio: "I'm deeply passionate about embedded system. I love exploring how hardware and software come together to solve real-world problems. Whatever I am doing, I feel most alive when I'm building, experimenting, and pushing my limits. This field excites me because it's a perfect mix of creativity, logic, and impact."
+      },
+      {
+        id: 8,
+        name: "Devansh Mehrotra",
+        position: "Team Member",
+        photo: "https://images.unsplash.com/photo-1517841905240-472988d4e47f?w=400&h=400&fit=crop&crop=face",
+        location: "Seattle, WA",
+        email: "devansh.mehrotra@company.com",
+        linkedin: "https://linkedin.com/in/devanshmehrotra",
+        quote: "Real progress begins when you stop fearing what you don't understand. ",
+        bio: "I explore the principles of physics and apply them through hands-on projects.When I find a concept I don’t understand, it sparks my curiosity and makes me even more passionate about exploring it further."
+      },
+      {
+        id: 9,
+        name: "Armaan",
+        position: "Team Member",
+        photo: "https://images.unsplash.com/photo-1517841905240-472988d4e47f?w=400&h=400&fit=crop&crop=face",
+        location: "Seattle, WA",
+        email: "aarav.singh@company.com",
+        linkedin: "https://linkedin.com/in/aaravsingh",
+        quote: "Doing my best. Results may vary.",
+        bio: "I’m deeply passionate about expanding my knowledge exploring facts, history, and general knowledge has always inspired me to see the world in new ways. Alongside this, I dream of creating my own film one day, bringing my stories to life by writing scripts and directing them. For me, it’s about blending curiosity with creativity to share ideas that can both inform and inspire."
+      }
+    ],
+    Mechanical: [
+      {
+        id: 1,
+        name: "Saiansh Bakshi",
+        position: "Team Member",
+        photo: "https://images.unsplash.com/photo-1494790108755-2616b612b1e5?w=400&h=400&fit=crop&crop=face",
+        location: "",
+        email: "",
+        quote: "They see a man holding the sky and call it punishment. I call it duty — for if I falter, the stars will learn to fall. — Atlas",
+        bio: "Passionate about defence. I build, adapt, and solve. No noise — just quiet skill, steady hands, and a purpose that doesn’t fade."
+      },
+      {
+        id: 2,
+        name: "Saksham Kashyap ",
+        position: "Team Member",
+          photo: "https://images.unsplash.com/photo-1494790108755-2616b612b1e5?w=400&h=400&fit=crop&crop=face",
+          location: "",
+          email: "",
+          quote: "Your personality is what makes you unique, your attitude determines how people remember you.",
+        bio: "I’m passionate about continual learning, especially in tech. I love diving into new advancements and sharing what I learn with others to help them grow."
+      },
+      {
+        id: 3,
+        name: "Aatish Kumar Sahu",
+        position: "Team Member",
+        photo: "https://images.unsplash.com/photo-1517841905240-472988d4e47f?w=400&h=400&fit=crop&crop=face",
+        location: "Seattle, WA",
+        email: "aarav.singh@company.com",
+        linkedin: "https://linkedin.com/in/aaravsingh",
+        quote: "We fix what isn’t broken, then wonder why it stopped working.",
+        bio: "I'm fascinated by the details most people miss. I enjoy understanding how things work beneath the surface, not just using them. I love building things that are exactly as I imagined them to be."
+      },
+      {
+       id: 4,
+        name: "Shreyas Singh",
+        position: "Team Member",
+        photo: "https://images.unsplash.com/photo-1517841905240-472988d4e47f?w=400&h=400&fit=crop&crop=face",
+        location: "Seattle, WA",
+        email: "aarav.singh@company.com",
+        linkedin: "https://linkedin.com/in/aaravsingh",
+        quote: "Life shrinks or expands in proportion to one’s courage.",
+        bio: "Learning, discovering and innovating. Eager to turn today's madness into tomorrow's reality."
+
+      },
+      {
+        id: 5,
+        name: "Dhruv Birthal",
+        position: "Team Member",
+        photo: "https://images.unsplash.com/photo-1517841905240-472988d4e47f?w=400&h=400&fit=crop&crop=face",
+        location: "Seattle, WA",
+        email: "aarav.singh@company.com",
+        linkedin: "https://linkedin.com/in/aaravsingh",
+        quote: "Strive for perfection in everything you do. Take the best that exists and make it better. When it does not exist, design it. — Sir Henry Royce",
+        bio: "My passion is turning ambitious concepts into reality. I am driven by the process of engineering the physical hardware that brings intelligent machines to life, a field that I've explored in both advanced aerospace and robotics."
+
+      },
+
+    ],
+    Techies:[
+      {
+        id: 1,
+        name: "Vansh Kapil",
+        position: "Team Member",
+        photo: "https://images.unsplash.com/photo-1517841905240-472988d4e47f?w=400&h=400&fit=crop&crop=face",
+        location: "Seattle, WA",
+        email: "aarav.singh@company.com",
+        linkedin: "https://linkedin.com/in/aaravsingh",
+        quote: "The ones who are crazy enough to think they can fix everything… usually end up in the Techies department",
+        bio: "To learn anything and everything "
+
+      },
+      {
+        id: 2,
+        name: "Aatish Kumar Sahu",
+        position: "Team Member",
+        photo: "https://images.unsplash.com/photo-1517841905240-472988d4e47f?w=400&h=400&fit=crop&crop=face",
+        location: "Seattle, WA",
+        email: "aarav.singh@company.com",
+        linkedin: "https://linkedin.com/in/aaravsingh",
+        quote: "Worked fine in theory, then a user showed up.",
+        bio: "I'm fascinated by the details most people overlook. I enjoy understanding how things work beneath the surface, not just using them. Whether I'm debugging a tricky piece of code or improving a machine learning model, I love solving problems through systems thinking. I especially enjoy it when I can build tools or interfaces exactly as I imagined them to be, or even better."
+
+      },
+      {
+        id: 3,
+        name: "Anant Bedi",
+        position: "Team Member",
+        photo: "https://images.unsplash.com/photo-1517841905240-472988d4e47f?w=400&h=400&fit=crop&crop=face",
+        location: "Seattle, WA",
+        email: "aarav.singh@company.com",
+        linkedin: "https://linkedin.com/in/aaravsingh",
+        quote: "Curiosity in the mind, purpose in the heart and a vision that looks beyond the horizon. ",
+        bio: "I’m passionate about exploring technology and ideas with curiosity, transforming knowledge into practical impact, and inspiring others to learn, grow and think beyond limits for a better future."
+
+      },
+      {
+        id: 4,
+        name: "Shashwat Tewari",
+        position: "Team Member",
+        photo: "https://images.unsplash.com/photo-1517841905240-472988d4e47f?w=400&h=400&fit=crop&crop=face",
+        location: "Seattle, WA",
+        email: "aarav.singh@company.com",
+        linkedin: "https://linkedin.com/in/aaravsingh",
+        quote: "litle lo",
+        bio: "I’m passionate about coding, building cool stuff, getting lost in movies and music, geeking out on psychology, jamming on drums and guitar, and traveling the world — all while cracking jokes, keeping it light, and never taking life too seriously… unless there’s free food involved."
+
+      },
+      {
+        id: 5,
+        name: "Raghav Khurana",
+        position: "Team Member",
+        photo: "https://images.unsplash.com/photo-1517841905240-472988d4e47f?w=400&h=400&fit=crop&crop=face",
+        location: "Seattle, WA",
+        email: "aarav.singh@company.com",
+        linkedin: "https://linkedin.com/in/aaravsingh",
+        quote: "Your most precious resource is the calmness within your mind.",
+        bio: "I aspire to help bring equality through software, and explore every field within computer science and robotics."
+
       }
     ]
   };
